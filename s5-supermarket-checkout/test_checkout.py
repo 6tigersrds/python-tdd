@@ -30,3 +30,7 @@ def test_canApplyDiscountRule(checkout):
     checkout.addItem("a")
     checkout.addItem("a")
     assert checkout.calculateTotal() == 2
+
+def test_execeptionWithBadItem(checkout):
+    with pytest.raises(Exception):
+        checkout.addItem("c")
