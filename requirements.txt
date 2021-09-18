@@ -1,2 +1,3 @@
 # Pytest Framework
 pytest==6.2.1
+requests
